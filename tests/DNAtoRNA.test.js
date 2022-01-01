@@ -11,7 +11,7 @@ describe("For DNAtoRNA, ", () => {
         expect(DNAtoRNA("")).toBe("");
     });
 
-    test("DNAtoRNA returns 'U' when provided 'T'", () => {
+    test(`DNAtoRNA returns "U" when provided "T"`, () => {
         expect(DNAtoRNA("T")).toBe("U");
     });
 
@@ -23,5 +23,7 @@ describe("For DNAtoRNA, ", () => {
         expect(DNAtoRNA(acidBase)).toBe(acidBase);
     })
 
-
+    test(`DNAtoRNA returns "GU" when provide "GT`, () => {
+        expect(DNAtoRNA("GT")).toBe("GU");
+    })
 });
