@@ -1,0 +1,15 @@
+{
+  "name": "CodeWars_DNA_To_RNA_Conversion",
+  "version": "1.0.0",
+  "dependencies": {
+    "jest": "27.4.5",
+    "babel": "6.23.0",
+    "@babel/preset-env": "7.16.7"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }
+}
