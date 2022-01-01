@@ -1,5 +1,17 @@
+import {DNAtoRNA} from "../src/DNAtoRNA";
+
 describe("For DNAtoRNA, ", () => {
-    test("foo", () => {
-        expect(2+2).toBe(4);
-    })
-})
+    test("DNAtoRNA does throw", () => {
+        expect(() => {
+            DNAtoRNA("")
+        }).not.toThrow();
+    });
+
+   test("DNAtoRNA returns an empty string if provided an empty string", () => {
+      expect(DNAtoRNA("")).toBe("");
+   });
+
+   test("DNAtoRNA returns 'U' when provided 'T'", () => {
+      expect(DNAtoRNA("T")).toBe("U");
+   });
+});
