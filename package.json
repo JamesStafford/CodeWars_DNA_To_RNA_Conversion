@@ -1,5 +1,5 @@
 {
-  "name": "CodeWars_DNA_To_RNA_Conversion",
+  "name": "codewars_dna_to_rna_conversion",
   "version": "1.0.0",
   "dependencies": {
     "jest": "27.4.5",
