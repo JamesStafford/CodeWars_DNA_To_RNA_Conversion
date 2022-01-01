@@ -21,9 +21,21 @@ describe("For DNAtoRNA, ", () => {
         "A"
     ])(`DNA returns the acid base for "%i"`, (acidBase) => {
         expect(DNAtoRNA(acidBase)).toBe(acidBase);
-    })
+    });
 
-    test(`DNAtoRNA returns "GU" when provide "GT`, () => {
+    test(`DNAtoRNA returns "GU" when provide "GT"`, () => {
         expect(DNAtoRNA("GT")).toBe("GU");
-    })
+    });
+
+    test(`DNAtoRNA returns "TTTT" when provide "UUUU"`, () => {
+        expect(DNAtoRNA("TTTT")).toBe("UUUU");
+    });
+
+    test(`DNAtoRNA returns "GCAT" when provide "GCAU"`, () => {
+        expect(DNAtoRNA("GCAT")).toBe("GCAU");
+    });
+
+    test(`DNAtoRNA returns "GACCGCCGCC" when provide "GACCGCCGCC"`, () => {
+        expect(DNAtoRNA("GACCGCCGCC")).toBe("GACCGCCGCC");
+    });
 });
