@@ -14,4 +14,12 @@ describe("For DNAtoRNA, ", () => {
    test("DNAtoRNA returns 'U' when provided 'T'", () => {
       expect(DNAtoRNA("T")).toBe("U");
    });
+
+   test.each([
+       "G",
+       "C",
+       "A"
+   ])(`DNA returns the acid base for "%i"`, (acidBase) => {
+       expect(DNAtoRNA(acidBase)).toBe(acidBase);
+   })
 });

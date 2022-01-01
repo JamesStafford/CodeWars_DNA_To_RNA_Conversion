@@ -2,5 +2,8 @@ export function DNAtoRNA(dna) {
     if (!dna) {
         return "";
     }
-    return "U";
+    if (dna === "T") {
+        return "U"
+    }
+    return dna;
 }
